@@ -30,7 +30,7 @@ const SettingsEntry = styled.div`
 const SocialEntry = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: ${MENU_ENTRY_HEIGHT}px;
   padding: 0 16px;
 `;
@@ -60,7 +60,7 @@ const PanelFooter: React.FC<Props> = ({
     <Container>
       <SocialEntry>
         <CakePrice cakePriceUsd={cakePriceUsd} isDark={isDark} />
-        <YPantyPrice yPantyPriceUsd={ypantyPriceUsd} isDark={isDark} />
+        {/* <YPantyPrice yPantyPriceUsd={ypantyPriceUsd} isDark={isDark} /> */}
       </SocialEntry>
       <SettingsEntry>
         <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
